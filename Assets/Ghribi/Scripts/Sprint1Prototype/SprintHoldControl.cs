@@ -9,10 +9,19 @@ namespace LittleDriver.Prototype
         [SerializeField] private bool isBrake;
         [SerializeField] private bool isHorn;
         private int? pointerId;
+        private UnityEngine.UI.Button button;
+
+        private void Awake() => button = GetComponent<UnityEngine.UI.Button>();
+
+        private void Update()
+        {
+            if (isHorn && button != null)
+                button.interactable = car != null && car.IsBuckled && !car.IsFinished && !car.IsRecovering && !car.IsHornBlocked;
+        }
 
         public void OnPointerDown(PointerEventData data)
         {
-            if (pointerId.HasValue) return;
+            if (pointerId.HasValue || (isHorn && (car == null || !car.CanHorn))) return;
             pointerId = data.pointerId;
             SetHeld(true);
         }

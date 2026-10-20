@@ -31,7 +31,9 @@ namespace LittleDriver.Prototype
             seatBeltInstruction.text = car.IsBuckled ? "CLICK! Belt buckled. Ready to drive." : "Drag the belt handle into the buckle, then release.";
             if (car.IsFinished) feedbackLabel.text = "COURSE COMPLETE - press RESTART to try again";
             else if (!car.IsBuckled) feedbackLabel.text = "Buckle up before driving";
-            else if (Time.unscaledTime < car.CollisionUntil) feedbackLabel.text = $"CONTACT DETECTED: {car.LastContact}";
+            else if (car.IsHornBlocked) feedbackLabel.text = "Bel chwaya aal zamara! Nestaamlouha ken wa9t el haja.";
+            else if (car.IsRecovering) feedbackLabel.text = "Oops! Moving back 2 metres. Then keep going!";
+            else if (Time.unscaledTime < car.CollisionUntil) feedbackLabel.text = "All okay! Choose a clear lane and keep going.";
             else if (car.IsHonking) feedbackLabel.text = "BEEP!";
             else feedbackLabel.text = "Hold GO to drive. Release to slow down. STOP to brake.";
         }

@@ -39,8 +39,8 @@ Player input
 
 - **Seat belt:** the car stays stopped until `IsBuckled` becomes true. The HUD then hides the belt panel and shows driving controls.
 - **Movement:** speed changes gradually, while lane selection moves the car smoothly between two fixed X positions. Braking takes priority over acceleration.
-- **Horn:** an AudioSource loops a temporary beep while HORN or H is held, and stops when released.
-- **Collisions:** the player's Rigidbody and BoxCollider contact an obstacle collider. `OnCollisionEnter` updates the counter and prints `Player collided with 'Obstacle ...' (collision #1).` in the Console.
+- **Horn:** HORN and H share a limit: the third press within a rolling 2-second window, or a continuous 2-second hold, stops the horn. The button is disabled for 3 seconds and until the warning voice finishes. Release before honking again. The warning says: «بالشويّة على الزمّارة! نستعملوها كان وقت الحاجة.»
+- **Collisions:** `OnCollisionEnter` counts and logs the contact, plays a small mint puff and soft sound, then smoothly moves the car back 2 metres over 0.65 seconds. Driving resumes from rest; hold GO to continue and choose a clear lane. Contacts during recovery are ignored.
 - **Restart:** the car resets its position and state, then raises a `Restarted` event so the HUD and belt interaction reset too.
 
 The Canvas uses Unity's Input System UI module for pointer input and TextMeshPro for labels. Scene references and button actions are already wired.
@@ -51,13 +51,15 @@ The Canvas uses Unity's Input System UI module for pointer input and TextMeshPro
 - Hold GO or W/Up Arrow to accelerate; release to coast.
 - Hold STOP or Space/Down Arrow to brake.
 - Use LEFT/RIGHT or A/D/arrow keys to select a lane.
-- Hold HORN or H to sound the horn.
+- Hold HORN or H to sound the horn, respecting the 2-second hold / 3 presses in 2 seconds limit.
 - Press RESTART or R to reset.
 
-`Editor/SprintPrototypeSceneBuilder` created the scene and connected its components. It does not run during gameplay.
+The original prototype passed Editor gameplay checks. The newer horn limits and collision recovery have not been play-tested yet. Physical Android testing is still pending. Temporary scene-building and checking tools were removed after completing the prototype.
 
-`Editor/SprintPrototypeChecks` provides **Little Driver \> Check Sprint 1 (while playing)**. It checks the belt, movement, lanes, held horn, collisions, finish, and restart. The Editor gameplay checks passed; physical Android testing is still pending.
+## Assigning audio
+
+Select **Player Car**, then find **Sprint Prototype Car** in the Inspector. Import your recordings into Assets and drag them into **Horn Sound**, **Horn Warning Voice** (Tunisian Arabic), and **Collision Sound**. Empty horn/collision slots use generated placeholders. The voice slot needs your recording; no spoken warning plays until it is assigned. Only generated clips are destroyed at runtime; imported audio assets are preserved.
 
 ## Prototype limits
 
-The scene uses gray boxes, temporary English labels, and a generated horn sound. Final art, Arabic guidance, cutscenes, and collision penalties/recovery are later work. US 1.5 currently covers collision detection and feedback only.
+The scene uses gray boxes, temporary labels, and placeholder sounds. Final art, the recorded Tunisian Arabic warning, other Arabic guidance, and cutscenes are later work. US 1.5 now includes collision feedback and a short reverse recovery; no scoring penalties are applied.
