@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 33e07d15c57a441419e83ce7cc3e7e16
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2282
+  packageName: Kiosk
+  packageVersion: 2.2
+  assetPath: Assets/Kiosk/install_RP_Versions.txt
+  uploadId: 749967
