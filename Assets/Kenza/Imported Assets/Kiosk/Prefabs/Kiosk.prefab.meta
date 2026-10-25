@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 68fa4bf5c2d6a664e84b934f79a01aef
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2282
+  packageName: Kiosk
+  packageVersion: 2.2
+  assetPath: Assets/Kiosk/Prefabs/Kiosk.prefab
+  uploadId: 749967

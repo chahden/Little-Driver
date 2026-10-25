@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7fe3d7d5d1acc7e44b46221cc916ae30
+NativeFormatImporter:
+  mainObjectFileID: -1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 2282
+  packageName: Kiosk
+  packageVersion: 2.2
+  assetPath: Assets/Kiosk/3dobjects/Materials/kiosk-advertising.mat
+  uploadId: 749967
