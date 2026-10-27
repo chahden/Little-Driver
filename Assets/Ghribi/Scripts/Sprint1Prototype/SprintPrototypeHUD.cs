@@ -14,6 +14,12 @@ namespace LittleDriver.Prototype
         [SerializeField] private TMP_Text feedbackLabel;
         [SerializeField] private TMP_Text collisionLabel;
         [SerializeField] private TMP_Text seatBeltInstruction;
+        [Header("Driver seat-belt portrait")]
+        [SerializeField] private UnityEngine.UI.Image driverPortrait;
+        [SerializeField] private UnityEngine.UI.Image driverBorder;
+        [SerializeField] private UnityEngine.UI.Outline driverGlow;
+        [SerializeField] private Sprite driverWithoutBelt;
+        [SerializeField] private Sprite driverWithBelt;
         private float buckledAt = -1;
 
         private void OnEnable() => car.Restarted += ResetUI;
@@ -21,6 +27,7 @@ namespace LittleDriver.Prototype
 
         private void Update()
         {
+            UpdateDriverPortrait();
             if (car.IsBuckled && buckledAt < 0) buckledAt = Time.unscaledTime;
             bool showBelt = !car.IsBuckled || Time.unscaledTime - buckledAt < 0.65f;
             seatBeltPanel.SetActive(showBelt);
@@ -48,6 +55,19 @@ namespace LittleDriver.Prototype
             buckledAt = -1;
             seatBeltPanel.SetActive(true);
             beltDrag.ResetBelt();
+            UpdateDriverPortrait();
+        }
+
+        private void UpdateDriverPortrait()
+        {
+            if (driverPortrait == null || driverBorder == null) return;
+            bool buckled = car.IsBuckled;
+            driverPortrait.sprite = buckled ? driverWithBelt : driverWithoutBelt;
+            float pulse = buckled ? 1f : 0.8f + 0.2f * Mathf.Sin(Time.unscaledTime * 4f);
+            Color colour = buckled ? new Color(0.12f, 0.8f, 0.3f) : new Color(1f, 0.12f, 0.16f);
+            driverBorder.color = colour * new Color(pulse, pulse, pulse, 1f);
+            if (driverGlow != null)
+                driverGlow.effectColor = new Color(colour.r, colour.g, colour.b, buckled ? 0.35f : 0.3f + 0.25f * pulse);
         }
     }
 }

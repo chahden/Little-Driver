@@ -50,6 +50,7 @@ namespace LittleDriver.Prototype
         public int Lane => lane;
         public event Action Restarted;
 
+
         private Rigidbody body;
         private AudioSource hornSource;
         private AudioClip hornClip;
@@ -226,6 +227,11 @@ namespace LittleDriver.Prototype
         private void OnCollisionEnter(Collision collision)
         {
             if (!IsBuckled || IsFinished || IsRecovering) return;
+            // Supporting road contacts are not obstacle impacts.
+            bool obstacleContact = false;
+            for (int i = 0; i < collision.contactCount; i++)
+                if (collision.GetContact(i).normal.y < 0.65f) obstacleContact = true;
+            if (!obstacleContact) return;
             CollisionCount++;
             LastContact = collision.gameObject.name;
             CollisionUntil = Time.unscaledTime + 1.5f;

@@ -5,6 +5,7 @@ public class CarSpawner : MonoBehaviour
 {
     [SerializeField] private IntersectionManager intersection;
     [SerializeField] private TrafficCar carPrefab;
+    [SerializeField] private TrafficCar[] vehiclePrefabs;
     [SerializeField] private LaneSpawnPoint[] spawnPoints;
 
     [Header("Spawning")]
@@ -31,7 +32,10 @@ public class CarSpawner : MonoBehaviour
         LaneSpawnPoint point = spawnPoints[Random.Range(0, spawnPoints.Length)];
         if (IsBlocked(point.transform.position)) return;
 
-        TrafficCar car = Instantiate(carPrefab, point.transform.position, point.transform.rotation);
+        TrafficCar selected = vehiclePrefabs != null && vehiclePrefabs.Length > 0
+            ? vehiclePrefabs[Random.Range(0, vehiclePrefabs.Length)] : carPrefab;
+        if (selected == null) return;
+        TrafficCar car = Instantiate(selected, point.transform.position, point.transform.rotation);
         car.Init(intersection, point.approach, point.PickIntent());
     }
 
