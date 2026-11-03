@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8dc3fdd6d13fce4439739a06d57157c5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344000
+  packageName: Easy Vehicle Steering
+  packageVersion: 1.0
+  assetPath: Assets/EasyVehicleSteering/Prefabs/SteeringButtons.prefab
+  uploadId: 816748

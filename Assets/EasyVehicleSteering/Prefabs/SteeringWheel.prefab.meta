@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: affe73079c73e4b4b945a2f1a3920c25
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344000
+  packageName: Easy Vehicle Steering
+  packageVersion: 1.0
+  assetPath: Assets/EasyVehicleSteering/Prefabs/SteeringWheel.prefab
+  uploadId: 816748

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 91c15bd3e9482b2448af9e38528f8cbb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344000
+  packageName: Easy Vehicle Steering
+  packageVersion: 1.0
+  assetPath: Assets/EasyVehicleSteering/Prefabs/SteeringDrag.prefab
+  uploadId: 816748

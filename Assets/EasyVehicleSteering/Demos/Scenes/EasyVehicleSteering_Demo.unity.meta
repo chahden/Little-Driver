@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 528b1c2c59b1b0d47941ed5d8088b9d6
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 344000
+  packageName: Easy Vehicle Steering
+  packageVersion: 1.0
+  assetPath: Assets/EasyVehicleSteering/Demos/Scenes/EasyVehicleSteering_Demo.unity
+  uploadId: 816748
