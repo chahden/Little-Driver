@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dc224e198d2244f19aad069d7b19ce65
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 402758
+  packageName: Ambient Traffic Jam
+  packageVersion: "v1.0.0 \u2014 Initial release."
+  assetPath: Assets/AmbientTraffic/Demo/Prefabs/Car_Hatchback.prefab
+  uploadId: 983292
