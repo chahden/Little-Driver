@@ -17,9 +17,11 @@ namespace LittleDriver.AI.Pedestrians
 
         private void Start()
         {
+            SidewalkNode[] nodes = sidewalkNetwork.GetComponentsInChildren<SidewalkNode>();
+            MeasureDistancesToCrossings(nodes);
             var links = new List<(SidewalkNode a, SidewalkNode b)>();
             var crossingLinks = new List<(SidewalkNode a, SidewalkNode b)>();
-            foreach (SidewalkNode node in sidewalkNetwork.GetComponentsInChildren<SidewalkNode>())
+            foreach (SidewalkNode node in nodes)
                 foreach (SidewalkNode other in node.Neighbours)
                 {
                     if (other == null || node.GetInstanceID() > other.GetInstanceID()) continue;
@@ -44,6 +46,31 @@ namespace LittleDriver.AI.Pedestrians
                     heading.sqrMagnitude > 0.001f ? Quaternion.LookRotation(heading) : Quaternion.identity, transform);
                 pedestrian.Begin(from, to);
                 spawned++;
+            }
+        }
+
+        // Shortest walking distance from every node to the nearest crossing node (lets pedestrians drift toward crossings).
+        private static void MeasureDistancesToCrossings(SidewalkNode[] nodes)
+        {
+            var open = new List<SidewalkNode>();
+            foreach (SidewalkNode node in nodes)
+            {
+                node.DistanceToCrossing = node.Crosswalk != null ? 0f : float.PositiveInfinity;
+                open.Add(node);
+            }
+            while (open.Count > 0)
+            {
+                SidewalkNode nearest = open[0];
+                foreach (SidewalkNode node in open)
+                    if (node.DistanceToCrossing < nearest.DistanceToCrossing) nearest = node;
+                open.Remove(nearest);
+                if (float.IsPositiveInfinity(nearest.DistanceToCrossing)) break;
+                foreach (SidewalkNode next in nearest.Neighbours)
+                {
+                    if (next == null) continue;
+                    float viaNearest = nearest.DistanceToCrossing + Vector3.Distance(nearest.Position, next.Position);
+                    if (viaNearest < next.DistanceToCrossing) next.DistanceToCrossing = viaNearest;
+                }
             }
         }
     }

@@ -17,6 +17,8 @@ namespace LittleDriver.AI.Pedestrians
         [SerializeField, Min(0.1f)] private float walkSpeed = 1.3f;
         [Tooltip("Chance to cross when reaching a zebra crossing.")]
         [SerializeField, Range(0f, 1f)] private float crossChance = 0.8f;
+        [Tooltip("Chance, at each sidewalk node, to take the way that leads toward the nearest zebra crossing.")]
+        [SerializeField, Range(0f, 1f)] private float crossingAttraction = 0.35f;
         [SerializeField, Min(30f)] private float turnSpeed = 360f;
         [Tooltip("Read-only: the action the tree is running.")]
         [SerializeField] private string currentAction;
@@ -120,13 +122,20 @@ namespace LittleDriver.AI.Pedestrians
             route.Enqueue(target.Position);
         }
 
-        // Random way on, avoiding turning straight back unless it is a dead end.
-        private static SidewalkNode PickNext(SidewalkNode node, SidewalkNode cameFrom)
+        // Mostly a random way on (never straight back unless it is a dead end); sometimes the way toward a crossing.
+        private SidewalkNode PickNext(SidewalkNode node, SidewalkNode cameFrom)
         {
             var options = new List<SidewalkNode>();
             foreach (SidewalkNode n in node.Neighbours)
                 if (n != null && n != cameFrom) options.Add(n);
             if (options.Count == 0) return cameFrom != null ? cameFrom : node;
+            if (Random.value < crossingAttraction)
+            {
+                SidewalkNode closest = options[0];
+                foreach (SidewalkNode n in options)
+                    if (n.DistanceToCrossing < closest.DistanceToCrossing) closest = n;
+                return closest;
+            }
             return options[Random.Range(0, options.Count)];
         }
 

@@ -17,8 +17,14 @@ namespace LittleDriver.Traffic
         [SerializeField, Min(0.5f)] private float assumedBraking = 4f;
         [Tooltip("Extra distance (m) a car must have left before a pedestrian steps out.")]
         [SerializeField, Min(0f)] private float safetyMargin = 4f;
+        [Tooltip("After a car has waited this long (s), new pedestrians hold back so the cars get their turn.")]
+        [SerializeField, Min(0f)] private float carPatience = 6f;
+        [Tooltip("A stopped car this far (m) before the crossing counts as waiting for it.")]
+        [SerializeField, Min(1f)] private float waitingZone = 15f;
 
         private readonly HashSet<Object> walkers = new HashSet<Object>();
+        private float carWaitingSince = -1f;
+        private bool carsHaveTurn;
 
         public bool IsOccupied
         {
@@ -29,8 +35,22 @@ namespace LittleDriver.Traffic
             }
         }
 
-        public void Enter(Object walker) => walkers.Add(walker);
-        public void Leave(Object walker) => walkers.Remove(walker);
+        /// <summary>Raised when the first walker steps onto the crossing.</summary>
+        public event System.Action<Crosswalk> Occupied;
+        /// <summary>Raised when the last walker has left it.</summary>
+        public event System.Action<Crosswalk> Cleared;
+
+        public void Enter(Object walker)
+        {
+            bool wasEmpty = !IsOccupied;
+            walkers.Add(walker);
+            if (wasEmpty) Occupied?.Invoke(this);
+        }
+
+        public void Leave(Object walker)
+        {
+            if (walkers.Remove(walker) && !IsOccupied) Cleared?.Invoke(this);
+        }
 
         /// <summary>Kerb-to-kerb points for a walker starting on side A (or B).</summary>
         public Vector3[] Route(bool fromSideA)
@@ -40,9 +60,40 @@ namespace LittleDriver.Traffic
             return fromSideA ? new[] { a, b } : new[] { b, a };
         }
 
-        /// <summary>True when no car on this road is on the crossing or too close to stop before it.</summary>
+        // Without this a steady stream of pedestrians could hold the cars up forever.
+        private void Update()
+        {
+            if (!IsCarWaiting())
+            {
+                carWaitingSince = -1f;
+                carsHaveTurn = false;
+                return;
+            }
+            if (carWaitingSince < 0f) carWaitingSince = Time.time;
+            if (Time.time - carWaitingSince >= carPatience) carsHaveTurn = true;
+        }
+
+        private bool IsCarWaiting()
+        {
+            foreach (IVehicle vehicle in Vehicles.All)
+            {
+                if (vehicle.Speed > 1f) continue;
+                Vector3 toCrossing = transform.position - vehicle.Position;
+                toCrossing.y = 0f;
+                if (Mathf.Abs(Vector3.Dot(toCrossing, transform.forward)) > kerbDistance + 1f) continue; // another road
+                float ahead = Vector3.Dot(toCrossing, vehicle.Forward);
+                if (ahead > halfDepth && ahead < halfDepth + waitingZone) return true;
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// True when no car on this road is on the crossing or too close to stop before it,
+        /// and the cars have not been kept waiting too long.
+        /// </summary>
         public bool IsClearToCross()
         {
+            if (carsHaveTurn) return false;
             foreach (IVehicle vehicle in Vehicles.All)
             {
                 Vector3 toCrossing = transform.position - vehicle.Position;

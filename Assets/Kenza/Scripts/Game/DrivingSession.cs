@@ -16,15 +16,13 @@ namespace LittleDriver.Game
         [FormerlySerializedAs("redLights")]
         [SerializeField] private StopLineMonitor stopLines;
         [SerializeField] private StarScore score;
-        [SerializeField] private string bumpMessage = "Careful, look before moving forward!";
-        [SerializeField] private string redLightMessage = "Red light! Stop and wait for green.";
-        [SerializeField] private string crossingMessage = "Stop! Let people cross first.";
 
         private void OnEnable()
         {
             collisions.Bumped += OnBumped;
             stopLines.RanRedLight += OnRanRedLight;
             stopLines.DroveOntoBusyCrossing += OnDroveOntoBusyCrossing;
+            stopLines.StoppedAtRedThenWentOnGreen += OnStoppedAtRedLight;
             score.OutOfStars += OnOutOfStars;
             input.RestartPressed += Restart;
         }
@@ -34,6 +32,7 @@ namespace LittleDriver.Game
             collisions.Bumped -= OnBumped;
             stopLines.RanRedLight -= OnRanRedLight;
             stopLines.DroveOntoBusyCrossing -= OnDroveOntoBusyCrossing;
+            stopLines.StoppedAtRedThenWentOnGreen -= OnStoppedAtRedLight;
             score.OutOfStars -= OnOutOfStars;
             input.RestartPressed -= Restart;
         }
@@ -44,9 +43,10 @@ namespace LittleDriver.Game
             car.Restart();
         }
 
-        private void OnBumped(Vector3 point) => score.Penalize(bumpMessage);
-        private void OnRanRedLight() => score.Penalize(redLightMessage);
-        private void OnDroveOntoBusyCrossing() => score.Penalize(crossingMessage);
-        private void OnOutOfStars() => car.SetLocked(true);
+        private void OnBumped(Vector3 point) => score.Penalize(StarReason.Bump);
+        private void OnRanRedLight() => score.Penalize(StarReason.RedLight);
+        private void OnDroveOntoBusyCrossing() => score.Penalize(StarReason.BusyCrossing);
+        private void OnStoppedAtRedLight() => score.Reward(StarReason.StoppedAtRedLight);
+        private void OnOutOfStars()=> car.SetLocked(true);
     }
 }

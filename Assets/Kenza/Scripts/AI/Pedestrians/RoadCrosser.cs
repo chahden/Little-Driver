@@ -33,8 +33,14 @@ namespace LittleDriver.AI.Pedestrians
         [SerializeField] private BehaviorTree behaviorTree;
         [Tooltip("Route: [0] = start spot at the roadside ... last = end spot (far or same sidewalk).")]
         [SerializeField] private Transform[] crossingPath = new Transform[0];
-        [Tooltip("Shown to the driver when this crosser goes onto the road.")]
-        [SerializeField] private string warningMessage = "Watch out! Someone is crossing!";
+        [Tooltip("Voice line played to the driver when this crosser goes onto the road.")]
+        [SerializeField] private AudioClip warningVoice;
+
+        [Header("Chasing a ball (optional)")]
+        [Tooltip("If set, this ball bounces onto the road first and the crosser runs after it.")]
+        [SerializeField] private BouncingBall ball;
+        [Tooltip("Seconds between the ball being kicked onto the road and the crosser running after it.")]
+        [SerializeField, Min(0f)] private float followBallDelay = 0.8f;
 
         [Header("Movement")]
         [SerializeField, Min(0.1f)] private float turnSpeed = 540f;
@@ -62,17 +68,22 @@ namespace LittleDriver.AI.Pedestrians
         private int nextPoint;
         private int lastStepFrame = -1;
         private CrosserPose pose = (CrosserPose)(-1);
+        private float chaseBallAt;
 
         /// <summary>Raised when the crosser starts going onto the road.</summary>
         public event Action<RoadCrosser> CrossingStarted;
+        /// <summary>Raised when the crosser is safely at the end of its route (off the road).</summary>
+        public event Action<RoadCrosser> ReachedEnd;
 
-        public string WarningMessage => warningMessage;
+        public AudioClip WarningVoice => warningVoice;
         public CrosserLocation Location => location;
         /// <summary>Direction of the current or last trip along the route.</summary>
         public bool HeadingToEnd { get; private set; }
         public float CarDistance => carDistance;
         public bool CarApproaching => carApproaching;
         public float SecondsAtEnd => location == CrosserLocation.AtEnd ? Time.time - arrivedAtEndTime : 0f;
+        /// <summary>True just after the ball was kicked: the crosser watches it before running after it.</summary>
+        public bool WaitingForBall => ball != null && location == CrosserLocation.OnRoad && HeadingToEnd && Time.time < chaseBallAt;
 
         private void Awake()
         {
@@ -107,6 +118,15 @@ namespace LittleDriver.AI.Pedestrians
             location = CrosserLocation.OnRoad;
             HeadingToEnd = towardEnd;
             nextPoint = towardEnd ? 1 : crossingPath.Length - 2;
+            if (ball != null)
+            {
+                if (towardEnd)
+                {
+                    ball.Kick();
+                    chaseBallAt = Time.time + followBallDelay;
+                }
+                else ball.CarryBack(transform, ball.HomePosition.y - startPosition.y);
+            }
             if (towardEnd) CrossingStarted?.Invoke(this);
         }
 
@@ -116,6 +136,11 @@ namespace LittleDriver.AI.Pedestrians
             // Behavior Designer's Utility Selector can update the running action twice in one frame; move only once.
             if (lastStepFrame == Time.frameCount) return false;
             lastStepFrame = Time.frameCount;
+            if (towardEnd && WaitingForBall)
+            {
+                TurnTowards(ball.transform.position); // watch the ball roll out, then run after it
+                return false;
+            }
             Vector3 goal = crossingPath[nextPoint].position;
             TurnTowards(goal);
             transform.position = Vector3.MoveTowards(transform.position, goal, speed * Time.deltaTime);
@@ -128,7 +153,12 @@ namespace LittleDriver.AI.Pedestrians
                 return false;
             }
             location = towardEnd ? CrosserLocation.AtEnd : CrosserLocation.AtStart;
-            if (towardEnd) arrivedAtEndTime = Time.time;
+            if (!towardEnd && ball != null) ball.Settle();
+            if (towardEnd)
+            {
+                arrivedAtEndTime = Time.time;
+                ReachedEnd?.Invoke(this);
+            }
             return true;
         }
 
@@ -168,6 +198,7 @@ namespace LittleDriver.AI.Pedestrians
             transform.SetPositionAndRotation(startPosition, startRotation);
             location = CrosserLocation.AtStart;
             SetPose(CrosserPose.Idle);
+            if (ball != null) ball.ResetBall();
             runningAction = "None";
             RefreshSenses(); // the car was just moved back to the start; don't let the tree act on old readings
             if (isActiveAndEnabled) behaviorTree.EnableBehavior();

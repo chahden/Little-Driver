@@ -27,6 +27,11 @@ namespace LittleDriver.AI.Pedestrians
 
         protected override void Begin() => Crosser.StartPath(true);
 
-        protected override bool Step() => Crosser.FollowPath(true, speed);
+        protected override bool Step()
+        {
+            // A ball chaser stands and watches the ball for a moment before running after it.
+            Crosser.SetPose(Crosser.WaitingForBall ? CrosserPose.Idle : Pose);
+            return Crosser.FollowPath(true, speed);
+        }
     }
 }

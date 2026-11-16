@@ -17,6 +17,8 @@ namespace LittleDriver.AI.Pedestrians
         [SerializeField] private bool isSideA;
 
         public IReadOnlyList<SidewalkNode> Neighbours => neighbours;
+        /// <summary>Walking distance (m) along the sidewalks to the nearest zebra crossing; set at start by the spawner.</summary>
+        public float DistanceToCrossing { get; set; } = float.PositiveInfinity;
         public Crosswalk Crosswalk => crosswalk;
         public SidewalkNode OtherSide => otherSide;
         public bool IsSideA => isSideA;

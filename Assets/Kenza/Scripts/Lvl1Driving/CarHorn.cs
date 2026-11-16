@@ -12,8 +12,6 @@ namespace LittleDriver.Driving
 
         private AudioSource source;
 
-        public bool IsHonking => source.isPlaying;
-
         private void Awake()
         {
             source = GetComponent<AudioSource>();

@@ -17,6 +17,13 @@ namespace LittleDriver.AI.Traffic
         [SerializeField, Min(0f)] private float frontOffset = 1.7f;
         [SerializeField, Min(0f)] private float probeHeight = 0.8f;
         [SerializeField] private LayerMask obstacleLayers;
+        [Tooltip("A hit only counts when it is this close (m) to the lane path ahead, so things beside a bend are ignored.")]
+        [SerializeField, Min(0.5f)] private float laneHalfWidth = 1.55f;
+        [Tooltip("Extra width (m) for moving things, so a car drifting into the lane is still seen.")]
+        [SerializeField, Min(0f)] private float vehicleMargin = 1.1f;
+
+        private readonly RaycastHit[] hits = new RaycastHit[16];
+        private LaneFollower lane;
 
         public StopLine NextStopLine { get; private set; }
         public float StopLineDistance { get; private set; }
@@ -24,6 +31,8 @@ namespace LittleDriver.AI.Traffic
         public float ObstacleDistance { get; private set; }
 
         private Vector3 FrontPoint => transform.position + transform.forward * frontOffset;
+
+        private void Awake() => lane = GetComponent<LaneFollower>();
 
         public void Sense(float speed)
         {
@@ -49,9 +58,44 @@ namespace LittleDriver.AI.Traffic
         {
             Vector3 origin = FrontPoint + Vector3.up * probeHeight;
             float length = minimumProbeLength + speed * probeSecondsAhead;
-            HasObstacle = Physics.BoxCast(origin, probeHalfExtents, transform.forward, out RaycastHit hit,
+            int count = Physics.BoxCastNonAlloc(origin, probeHalfExtents, transform.forward, hits,
                 transform.rotation, length, obstacleLayers, QueryTriggerInteraction.Ignore);
-            ObstacleDistance = HasObstacle ? hit.distance : float.PositiveInfinity;
+            ObstacleDistance = float.PositiveInfinity;
+            for (int i = 0; i < count; i++)
+            {
+                RaycastHit hit = hits[i];
+                if (hit.distance >= ObstacleDistance || hit.transform.IsChildOf(transform)) continue;
+                // A hit at distance 0 overlapped the probe from the start: right in front, so it always counts.
+                // Otherwise it must be on the lane ahead; moving things (cars, crossers) get a wider margin for their body.
+                float reach = hit.collider.attachedRigidbody != null ? laneHalfWidth + vehicleMargin : laneHalfWidth;
+                if (hit.distance > 0f && !IsOnLaneAhead(hit.point, reach)) continue;
+                ObstacleDistance = hit.distance;
+            }
+            HasObstacle = !float.IsPositiveInfinity(ObstacleDistance);
+        }
+
+        // The probe looks straight ahead; in a bend that sweeps over the roadside, so check the hit against the lane itself.
+        private bool IsOnLaneAhead(Vector3 point, float reach)
+        {
+            if (lane == null || lane.Target == null) return true;
+            LaneWaypoint target = lane.Target;
+            if (IsNearSegment(point, transform.position, target.Position, reach)) return true;
+            foreach (LaneWaypoint next in target.Next)
+            {
+                if (next == null) continue;
+                if (IsNearSegment(point, target.Position, next.Position, reach)) return true;
+                foreach (LaneWaypoint after in next.Next)
+                    if (after != null && IsNearSegment(point, next.Position, after.Position, reach)) return true;
+            }
+            return false;
+        }
+
+        private static bool IsNearSegment(Vector3 point, Vector3 a, Vector3 b, float reach)
+        {
+            Vector2 p = new Vector2(point.x, point.z), start = new Vector2(a.x, a.z), end = new Vector2(b.x, b.z);
+            Vector2 segment = end - start;
+            float t = segment.sqrMagnitude > 0.0001f ? Mathf.Clamp01(Vector2.Dot(p - start, segment) / segment.sqrMagnitude) : 0f;
+            return (p - (start + segment * t)).sqrMagnitude <= reach * reach;
         }
 
         private void OnDrawGizmosSelected()

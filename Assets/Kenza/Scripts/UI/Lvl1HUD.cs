@@ -1,27 +1,19 @@
 using LittleDriver.Driving;
 using LittleDriver.Game;
-using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace LittleDriver.UI
 {
-    /// <summary>Speed, the driver's belt portrait, which controls are visible, and the feedback line.</summary>
+    /// <summary>The seat-belt mini game panel, which controls are visible, and the driver's belt portrait. No text: guidance is spoken.</summary>
     public sealed class Lvl1HUD : MonoBehaviour
     {
         [SerializeField] private Lvl1Car car;
-        [SerializeField] private CarHorn horn;
         [SerializeField] private StarScore score;
         [SerializeField] private GameObject seatBeltPanel;
         [SerializeField] private GameObject drivingControls;
-        [SerializeField] private TMP_Text speedLabel;
-        [SerializeField] private TMP_Text feedbackLabel;
-        [SerializeField] private TMP_Text seatBeltInstruction;
         [Tooltip("Seconds the belt panel stays up after the click, so the child sees it worked.")]
         [SerializeField, Min(0f)] private float beltPanelLinger = 0.65f;
-        [FormerlySerializedAs("penaltyMessageSeconds")]
-        [SerializeField, Min(0.5f)] private float messageSeconds = 3f;
 
         [Header("Driver seat-belt portrait")]
         [SerializeField] private Image driverPortrait;
@@ -32,20 +24,12 @@ namespace LittleDriver.UI
 
         private float buckledAt = -1f;
         private bool seatBeltOpen;
-        private string message;
-        private float messageUntil;
 
-        private void OnEnable()
-        {
-            car.Restarted += ResetUI;
-            score.Penalized += ShowMessage;
-        }
+        /// <summary>True while the seat-belt mini game is open and the car is not yet buckled.</summary>
+        public bool IsSeatBeltOpen => seatBeltOpen && !car.IsBuckled;
 
-        private void OnDisable()
-        {
-            car.Restarted -= ResetUI;
-            score.Penalized -= ShowMessage;
-        }
+        private void OnEnable() => car.Restarted += ResetUI;
+        private void OnDisable() => car.Restarted -= ResetUI;
 
         private void Update()
         {
@@ -55,26 +39,6 @@ namespace LittleDriver.UI
             bool showBelt = car.IsBuckled ? seatBeltOpen && Time.unscaledTime - buckledAt < beltPanelLinger : seatBeltOpen;
             seatBeltPanel.SetActive(showBelt);
             drivingControls.SetActive(!showBelt && !car.IsFinished && !score.IsOutOfStars);
-            speedLabel.text = $"{car.Speed * 3.6f:00} km/h";
-            seatBeltInstruction.text = car.IsBuckled ? "CLICK! Belt buckled. Ready to drive." : "Drag the belt handle into the buckle, then release.";
-            feedbackLabel.text = CurrentFeedback();
-        }
-
-        private string CurrentFeedback()
-        {
-            if (car.IsFinished) return "COURSE COMPLETE - press RESTART to try again";
-            if (!car.IsBuckled) return seatBeltOpen ? "Buckle up before driving" : "Tap your driver to put on the seat belt!";
-            if (Time.unscaledTime < messageUntil) return message;
-            if (score.IsOutOfStars) return "No stars left - press RESTART to try again";
-            if (horn.IsHonking) return "BEEP!";
-            return "Hold GO to drive. Turn the wheel to steer. STOP to brake.";
-        }
-
-        /// <summary>Shows a message on the feedback line for a few seconds.</summary>
-        public void ShowMessage(string message)
-        {
-            this.message = message;
-            messageUntil = Time.unscaledTime + messageSeconds;
         }
 
         /// <summary>Opens the seat-belt mini game (driver portrait button).</summary>
@@ -87,7 +51,6 @@ namespace LittleDriver.UI
         {
             buckledAt = -1f;
             seatBeltOpen = false;
-            messageUntil = 0f;
         }
 
         private void UpdateDriverPortrait()
