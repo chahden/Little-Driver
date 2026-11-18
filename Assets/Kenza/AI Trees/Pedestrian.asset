@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Pedestrian
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.ExternalBehaviorTree
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 'Pedestrian: finish crossing once on the road, wait at the
+      kerb while a car is too close, step out, otherwise walk the sidewalk.'
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(0,0)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,100)"},"ID":1,"Name":"Repeat
+        Forever","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":1},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0,200)"},"ID":2,"Name":"Pedestrian","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-600,330)"},"ID":3,"Name":"Finish
+        crossing","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.IsOnRoad","NodeData":{"Offset":"(-55,130)"},"ID":4,"Name":"On
+        the road?","Instant":true},{"Type":"LittleDriver.AI.Tasks.WalkRoute","NodeData":{"Offset":"(55,130)"},"ID":5,"Name":"Cross
+        the street","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-300,330)"},"ID":6,"Name":"Wait
+        at the kerb","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.WantsToCross","NodeData":{"Offset":"(-110,130)"},"ID":7,"Name":"Wants
+        to cross?","Instant":true},{"Type":"LittleDriver.AI.Tasks.CarTooClose","NodeData":{"Offset":"(0,130)"},"ID":8,"Name":"Car
+        too close?","Instant":true},{"Type":"LittleDriver.AI.Tasks.WaitForCars","NodeData":{"Offset":"(110,130)"},"ID":9,"Name":"Wait
+        for cars","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,330)"},"ID":10,"Name":"Step
+        onto the crossing","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.WantsToCross","NodeData":{"Offset":"(-55,130)"},"ID":11,"Name":"Wants
+        to cross?","Instant":true},{"Type":"LittleDriver.AI.Tasks.StepOut","NodeData":{"Offset":"(55,130)"},"ID":12,"Name":"Step
+        out","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(300,330)"},"ID":13,"Name":"Walk","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.HasRoute","NodeData":{"Offset":"(-55,130)"},"ID":14,"Name":"Has
+        a route?","Instant":true},{"Type":"LittleDriver.AI.Tasks.WalkRoute","NodeData":{"Offset":"(55,130)"},"ID":15,"Name":"Walk
+        on the sidewalk","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Idle","NodeData":{"Offset":"(560,330)"},"ID":16,"Name":"Wait
+        for a route","Instant":true}]}]}}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.12

@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: AI Car
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.ExternalBehaviorTree
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 'Traffic car: stop for the light, let pedestrians cross,
+      keep distance, give way at a busy junction, otherwise follow the lane.'
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(0,0)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,100)"},"ID":1,"Name":"Repeat
+        Forever","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":1},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Selector","NodeData":{"Offset":"(0,200)"},"ID":2,"Name":"Drive","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-600,330)"},"ID":3,"Name":"Obey
+        traffic light","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.LightSaysStop","NodeData":{"Offset":"(-55,130)"},"ID":4,"Name":"Light
+        says stop?","Instant":true},{"Type":"LittleDriver.AI.Tasks.StopAtLine","NodeData":{"Offset":"(55,130)"},"ID":5,"Name":"Stop
+        at red light","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(-300,330)"},"ID":6,"Name":"Let
+        pedestrians cross","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.CrossingBusy","NodeData":{"Offset":"(-55,130)"},"ID":7,"Name":"Zebra
+        crossing busy?","Instant":true},{"Type":"LittleDriver.AI.Tasks.StopAtLine","NodeData":{"Offset":"(55,130)"},"ID":8,"Name":"Wait
+        at zebra crossing","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,330)"},"ID":9,"Name":"Keep
+        distance","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.ObstacleAhead","NodeData":{"Offset":"(-55,130)"},"ID":10,"Name":"Obstacle
+        ahead?","Instant":true},{"Type":"LittleDriver.AI.Tasks.BrakeForObstacle","NodeData":{"Offset":"(55,130)"},"ID":11,"Name":"Brake
+        for obstacle","Instant":true}]},{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(300,330)"},"ID":12,"Name":"Give
+        way","Instant":true,"AbortTypeabortType":"Both","Children":[{"Type":"LittleDriver.AI.Tasks.JunctionBusy","NodeData":{"Offset":"(-55,130)"},"ID":13,"Name":"Junction
+        busy?","Instant":true},{"Type":"LittleDriver.AI.Tasks.StopAtLine","NodeData":{"Offset":"(55,130)"},"ID":14,"Name":"Give
+        way at junction","Instant":true}]},{"Type":"LittleDriver.AI.Tasks.FollowLane","NodeData":{"Offset":"(560,330)"},"ID":15,"Name":"Follow
+        lane","Instant":true}]}]}}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.12

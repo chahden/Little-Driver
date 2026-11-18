@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b23f08d2ae4cba14087c1ed36193d82b, type: 3}
+  m_Name: Traffic Light FSM
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.ExternalBehaviorTree
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 'Finite state machine of a traffic light: each node is a
+      state, the sequence order is the transitions (Green -> Yellow -> Red -> Green).'
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: '{"EntryTask":{"Type":"BehaviorDesigner.Runtime.Tasks.EntryTask","NodeData":{"Offset":"(0,0)"},"ID":0,"Name":"Entry","Instant":true},"RootTask":{"Type":"BehaviorDesigner.Runtime.Tasks.Repeater","NodeData":{"Offset":"(0,100)"},"ID":1,"Name":"Repeat
+        Forever","Instant":true,"SharedIntcount":{"Type":"BehaviorDesigner.Runtime.SharedInt","Name":null,"Int32mValue":1},"SharedBoolrepeatForever":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":true},"SharedBoolendOnFailure":{"Type":"BehaviorDesigner.Runtime.SharedBool","Name":null,"BooleanmValue":false},"Children":[{"Type":"BehaviorDesigner.Runtime.Tasks.Sequence","NodeData":{"Offset":"(0,200)"},"ID":2,"Name":"Cycle","Instant":true,"AbortTypeabortType":"None","Children":[{"Type":"LittleDriver.AI.Tasks.TrafficLightPhase","NodeData":{"Offset":"(-240,320)"},"ID":3,"Name":"Green","Instant":true,"TrafficLightStatestate":"Green"},{"Type":"LittleDriver.AI.Tasks.TrafficLightPhase","NodeData":{"Offset":"(0,320)"},"ID":4,"Name":"Yellow","Instant":true,"TrafficLightStatestate":"Yellow"},{"Type":"LittleDriver.AI.Tasks.TrafficLightPhase","NodeData":{"Offset":"(240,320)"},"ID":5,"Name":"Red","Instant":true,"TrafficLightStatestate":"Red"}]}]}}'
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 1.7.12

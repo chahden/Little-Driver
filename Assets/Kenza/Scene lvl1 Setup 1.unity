@@ -544,6 +544,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &18796126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18796119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &20422520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -621,6 +661,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 843834703216252590, guid: 95db0eda33d641e44b8b9f35f7ecc5a0, type: 3}
   m_PrefabInstance: {fileID: 20422520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &23294769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 23294770}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &23294770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23294769}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2143521478}
+  - {fileID: 415720032}
+  - {fileID: 961104495}
+  m_Father: {fileID: 689703827}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &26816521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1186,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &54795343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54795336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &61185667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1951,6 +2065,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 85407129}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 85407133}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &85407126 stripped
 GameObject:
@@ -1979,6 +2096,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 0
   startOffset: 1
+  currentAction: 
 --- !u!114 &85407129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1999,6 +2117,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &85407133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85407126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &99055783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,6 +2821,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914054693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &137508406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 137508407}
+  - component: {fileID: 137508409}
+  - component: {fileID: 137508408}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &137508407
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137508406}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 212188727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &137508408
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137508406}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &137508409
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137508406}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &138020752
 GameObject:
   m_ObjectHideFlags: 0
@@ -2734,6 +2982,96 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 21, y: 4, z: 21}
   m_Center: {x: 0, y: 2, z: 0}
+--- !u!1 &140594554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140594555}
+  - component: {fileID: 140594557}
+  - component: {fileID: 140594556}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &140594555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140594554}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1333955623}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &140594556
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140594554}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &140594557
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140594554}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &141782016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2814,6 +3152,41 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1612715160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &148518481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148518482}
+  m_Layer: 0
+  m_Name: Crossing Lights  (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &148518482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148518481}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 270.1, y: 0, z: -234}
+  m_LocalScale: {x: 3.993133, y: 3.993132, z: 3.993133}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 509376511}
+  - {fileID: 689703827}
+  - {fileID: 901282491}
+  - {fileID: 822123542}
+  m_Father: {fileID: 2049371043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &151214722
 GameObject:
@@ -3806,6 +4179,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1866799717}
+    - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1866799719}
   m_SourcePrefab: {fileID: 100100000, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
 --- !u!1 &185014652
 GameObject:
@@ -4269,6 +4645,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 206178604}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 206178608}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &206178601 stripped
 GameObject:
@@ -4297,6 +4676,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 2
   startOffset: 0
+  currentAction: 
 --- !u!114 &206178604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4317,6 +4697,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &206178608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206178601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &206355348
 GameObject:
   m_ObjectHideFlags: 0
@@ -4353,6 +4773,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8337697996530481816, guid: 23ded21ceec2ba14eb374450384ca248, type: 3}
   m_PrefabInstance: {fileID: 1420108728}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &212188726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 212188727}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &212188727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212188726}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 788400277}
+  - {fileID: 137508407}
+  - {fileID: 1799075631}
+  m_Father: {fileID: 337355471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &218918780
 GameObject:
   m_ObjectHideFlags: 0
@@ -5071,6 +5525,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8916784938708422293, guid: 3d6a1920cc4fcbc44bf765a76a7d1327, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1428889268}
+    - targetCorrespondingSourceObject: {fileID: 8916784938708422293, guid: 3d6a1920cc4fcbc44bf765a76a7d1327, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1428889270}
   m_SourcePrefab: {fileID: 100100000, guid: 3d6a1920cc4fcbc44bf765a76a7d1327, type: 3}
 --- !u!1 &248671461
 GameObject:
@@ -5262,6 +5719,7 @@ GameObject:
   - component: {fileID: 254233339}
   - component: {fileID: 254233338}
   - component: {fileID: 254233337}
+  - component: {fileID: 254233344}
   m_Layer: 7
   m_Name: AI Car (black 3)
   m_TagString: Untagged
@@ -5423,6 +5881,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5737567, y: 2.6825895, z: 4.536855}
   m_Center: {x: 0, y: 1.5405316, z: -0.22793579}
+--- !u!114 &254233344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254233335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: d1ce343bef7c9ed46b70e9cf10ecfc7b, type: 2}
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &256941278
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,6 +6042,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1628491245}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &258658304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258658305}
+  - component: {fileID: 258658307}
+  - component: {fileID: 258658306}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &258658305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258658304}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1333955623}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &258658306
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258658304}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &258658307
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258658304}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &261865674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6566,6 +7154,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6157916868785764055, guid: 927c723bc1d858245994b6f3977c5f6a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1541584966}
+    - targetCorrespondingSourceObject: {fileID: 6157916868785764055, guid: 927c723bc1d858245994b6f3977c5f6a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541584968}
   m_SourcePrefab: {fileID: 100100000, guid: 927c723bc1d858245994b6f3977c5f6a, type: 3}
 --- !u!1 &300800839
 GameObject:
@@ -7292,6 +7883,163 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1239332695}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &337355470
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1777094940}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70721084
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7070027
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.983
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Eastbound (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212188727}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 337355475}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 337355474}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 337355473}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &337355471 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 337355470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &337355472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 337355470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &337355473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337355472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &337355474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337355472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 337355475}
+  redLamp: {fileID: 788400278}
+  yellowLamp: {fileID: 137508408}
+  greenLamp: {fileID: 1799075632}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &337355475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337355472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 0
+  startOffset: 1
+  currentAction: 
 --- !u!1 &337982073
 GameObject:
   m_ObjectHideFlags: 0
@@ -7427,6 +8175,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1414439696}
+    - targetCorrespondingSourceObject: {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1414439698}
   m_SourcePrefab: {fileID: 100100000, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
 --- !u!114 &338652108
 MonoBehaviour:
@@ -8672,6 +9423,96 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 230f959f341f68b48937ee2ffbafbb1e, type: 2}
+--- !u!1 &380747526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 380747527}
+  - component: {fileID: 380747529}
+  - component: {fileID: 380747528}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &380747527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380747526}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 572229797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &380747528
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380747526}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &380747529
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380747526}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &385843928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6448907369475654395, guid: c2b4c30b837c126488c97cc404d549b6, type: 3}
@@ -9345,6 +10186,96 @@ CapsuleCollider:
   m_Height: 2.1
   m_Direction: 1
   m_Center: {x: 0, y: 1.05, z: 0}
+--- !u!1 &415720031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 415720032}
+  - component: {fileID: 415720034}
+  - component: {fileID: 415720033}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &415720032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415720031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 23294770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &415720033
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415720031}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &415720034
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415720031}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &423197424
 GameObject:
   m_ObjectHideFlags: 0
@@ -9479,6 +10410,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 425462692}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 425462696}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &425462689 stripped
 GameObject:
@@ -9507,6 +10441,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 2
   startOffset: 0
+  currentAction: 
 --- !u!114 &425462692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9527,6 +10462,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &425462696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425462689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &425657809
 GameObject:
   m_ObjectHideFlags: 0
@@ -9977,6 +10952,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 444523860}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 444523864}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &444523857 stripped
 GameObject:
@@ -10005,6 +10983,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 0
   startOffset: 1
+  currentAction: 
 --- !u!114 &444523860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10025,6 +11004,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &444523864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444523857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &446050286
 GameObject:
   m_ObjectHideFlags: 0
@@ -10428,6 +11447,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1037483438}
+    - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1037483440}
   m_SourcePrefab: {fileID: 100100000, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
 --- !u!1 &467184051
 GameObject:
@@ -11196,6 +12218,163 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6263538967120059027, guid: 7cf21e962eba36948b08a22dbffa5724, type: 3}
   m_PrefabInstance: {fileID: 507623495}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &509376510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 148518482}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00014710423
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Eastbound (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 678045727}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509376515}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509376514}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 509376513}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &509376511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 509376510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &509376512 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 509376510}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509376513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509376512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &509376514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509376512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 509376515}
+  redLamp: {fileID: 839532439}
+  yellowLamp: {fileID: 1375474383}
+  greenLamp: {fileID: 1913275211}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &509376515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509376512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 0
+  startOffset: 1
+  currentAction: 
 --- !u!1 &510469532
 GameObject:
   m_ObjectHideFlags: 0
@@ -12388,6 +13567,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8876164668396958133, guid: 5c50ca37aef71354fbe7577874085097, type: 3}
   m_PrefabInstance: {fileID: 561832368}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &572229796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 572229797}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &572229797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572229796}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2040780811}
+  - {fileID: 2074820761}
+  - {fileID: 380747527}
+  m_Father: {fileID: 901282491}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &576770217
 GameObject:
   m_ObjectHideFlags: 0
@@ -12866,6 +14079,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1323835906}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &587987129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 587987130}
+  - component: {fileID: 587987132}
+  - component: {fileID: 587987131}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &587987130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587987129}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1553640306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &587987131
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587987129}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &587987132
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587987129}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &593351467
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12888,7 +14191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51630737a9e1e454894ba13c14b30aec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.28
+      value: 51.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 51630737a9e1e454894ba13c14b30aec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13237,6 +14540,96 @@ MonoBehaviour:
   driveVoice: {fileID: 0}
   outOfStarsVoice: {fileID: 0}
   finishedVoice: {fileID: 0}
+--- !u!1 &600291419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 600291420}
+  - component: {fileID: 600291422}
+  - component: {fileID: 600291421}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &600291420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600291419}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2062969549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &600291421
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600291419}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &600291422
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600291419}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &602117919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14663,6 +16056,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914054693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &678045726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 678045727}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &678045727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678045726}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 839532438}
+  - {fileID: 1375474382}
+  - {fileID: 1913275210}
+  m_Father: {fileID: 509376511}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685501095
 GameObject:
   m_ObjectHideFlags: 0
@@ -14795,6 +16222,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1651956943}
+    - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1651956949}
   m_SourcePrefab: {fileID: 100100000, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
 --- !u!1 &687158574
 GameObject:
@@ -14893,6 +16323,163 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914054693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &689703826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 148518482}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70721084
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7070027
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.983
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Eastbound (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 23294770}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 689703831}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 689703830}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 689703829}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &689703827 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 689703826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &689703828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 689703826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &689703829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689703828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &689703830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689703828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 689703831}
+  redLamp: {fileID: 2143521479}
+  yellowLamp: {fileID: 415720033}
+  greenLamp: {fileID: 961104496}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &689703831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689703828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 0
+  startOffset: 1
+  currentAction: 
 --- !u!1 &692365172
 GameObject:
   m_ObjectHideFlags: 0
@@ -15987,6 +17574,163 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ba42420d92f622b48901f189d21e7819, type: 3}
   m_PrefabInstance: {fileID: 728757294}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &730443796
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1777094940}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071065
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071072
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Northbound (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2062969549}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730443801}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730443800}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730443799}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &730443797 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 730443796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &730443798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 730443796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &730443799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730443798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &730443800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730443798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 730443801}
+  redLamp: {fileID: 600291421}
+  yellowLamp: {fileID: 1519665617}
+  greenLamp: {fileID: 964769791}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &730443801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730443798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 2
+  startOffset: 0
+  currentAction: 
 --- !u!1 &734539251
 GameObject:
   m_ObjectHideFlags: 0
@@ -16042,6 +17786,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 484404636ac422042a24ac95512dc2d3, type: 3}
   m_PrefabInstance: {fileID: 1938055236}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &738286961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 738286962}
+  - component: {fileID: 738286964}
+  - component: {fileID: 738286963}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &738286962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738286961}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701376568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &738286963
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738286961}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &738286964
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738286961}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &741670354
 GameObject:
   m_ObjectHideFlags: 0
@@ -17374,6 +19208,96 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &788400276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788400277}
+  - component: {fileID: 788400279}
+  - component: {fileID: 788400278}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788400277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788400276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 212188727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &788400278
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788400276}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &788400279
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788400276}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &790047189
 GameObject:
   m_ObjectHideFlags: 0
@@ -18536,6 +20460,163 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8ce55e7574e85ca4c9b9051bd42ff7cc, type: 2}
+--- !u!1001 &822123541
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 148518482}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.500006
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071065
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071072
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Northbound (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1333955623}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 822123546}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 822123545}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 822123544}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &822123542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 822123541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &822123543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 822123541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &822123544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822123543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &822123545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822123543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 822123546}
+  redLamp: {fileID: 140594556}
+  yellowLamp: {fileID: 1101367892}
+  greenLamp: {fileID: 258658306}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &822123546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822123543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 2
+  startOffset: 0
+  currentAction: 
 --- !u!1 &825491736
 GameObject:
   m_ObjectHideFlags: 0
@@ -18897,6 +20978,96 @@ Transform:
   - {fileID: 2110639799}
   m_Father: {fileID: 251896687}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &839532437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839532438}
+  - component: {fileID: 839532440}
+  - component: {fileID: 839532439}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839532438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839532437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 678045727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &839532439
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839532437}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &839532440
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839532437}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &839571395
 GameObject:
   m_ObjectHideFlags: 0
@@ -18944,6 +21115,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1329372183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &840580617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 840580618}
+  - component: {fileID: 840580620}
+  - component: {fileID: 840580619}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &840580618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840580617}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701376568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &840580619
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840580617}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &840580620
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840580617}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &843051779
 GameObject:
   m_ObjectHideFlags: 0
@@ -20182,6 +22443,163 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4450116380544556, guid: 3f769da7f9d044c44b513002c34098b2, type: 3}
   m_PrefabInstance: {fileID: 895062076}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &901282490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 148518482}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000026822084
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Northbound (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 572229797}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901282495}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901282494}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 901282493}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &901282491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 901282490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &901282492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 901282490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &901282493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901282492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &901282494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901282492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 901282495}
+  redLamp: {fileID: 2040780812}
+  yellowLamp: {fileID: 2074820762}
+  greenLamp: {fileID: 380747528}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &901282495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901282492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 2
+  startOffset: 0
+  currentAction: 
 --- !u!1 &911510108
 GameObject:
   m_ObjectHideFlags: 0
@@ -21285,6 +23703,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 51f0e34e3bf5a364fb1f0489c6056013, type: 3}
   m_PrefabInstance: {fileID: 959897059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &961104494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961104495}
+  - component: {fileID: 961104497}
+  - component: {fileID: 961104496}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &961104495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961104494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 23294770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &961104496
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961104494}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &961104497
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961104494}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &961758139
 GameObject:
   m_ObjectHideFlags: 0
@@ -21527,6 +24035,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b3e2d8ac8ed4654da704e9fb65177fe, type: 3}
   m_PrefabInstance: {fileID: 963171471}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &964769789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964769790}
+  - component: {fileID: 964769792}
+  - component: {fileID: 964769791}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &964769790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964769789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2062969549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &964769791
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964769789}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &964769792
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964769789}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &966694281
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21743,6 +24341,96 @@ Transform:
   - {fileID: 1958519709}
   m_Father: {fileID: 424715225}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &974252619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974252620}
+  - component: {fileID: 974252622}
+  - component: {fileID: 974252621}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974252620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974252619}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1553640306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &974252621
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974252619}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &974252622
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974252619}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &975943208
 GameObject:
   m_ObjectHideFlags: 0
@@ -22210,6 +24898,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6992360245988857, guid: e7960ca7e82a51144ac57591496310c6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2008650678}
+    - targetCorrespondingSourceObject: {fileID: 6992360245988857, guid: e7960ca7e82a51144ac57591496310c6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2008650680}
   m_SourcePrefab: {fileID: 100100000, guid: e7960ca7e82a51144ac57591496310c6, type: 3}
 --- !u!1 &996872310
 GameObject:
@@ -23269,6 +25960,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1037483440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037483433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!4 &1040279278 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1669306857316323262, guid: beb5ab7ecfa27f142abc7ce4e17987c7, type: 3}
@@ -24079,6 +26810,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6a994d127f73e884b8f66ed0300a8cae, type: 3}
   m_PrefabInstance: {fileID: 1096608391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1101367890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1101367891}
+  - component: {fileID: 1101367893}
+  - component: {fileID: 1101367892}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1101367891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101367890}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1333955623}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1101367892
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101367890}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1101367893
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101367890}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1107056326
 GameObject:
   m_ObjectHideFlags: 0
@@ -31440,6 +34261,7 @@ GameObject:
   - component: {fileID: 1223639726}
   - component: {fileID: 1223639725}
   - component: {fileID: 1223639724}
+  - component: {fileID: 1223639731}
   m_Layer: 7
   m_Name: AI Car (green)
   m_TagString: Untagged
@@ -31601,6 +34423,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5737286, y: 2.611735, z: 4.347269}
   m_Center: {x: 0, y: 1.501168, z: -0.124073744}
+--- !u!114 &1223639731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223639722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: d1ce343bef7c9ed46b70e9cf10ecfc7b, type: 2}
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &1226400283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32149,6 +35011,96 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9f8c52dd6534ca41841b59366d873d9, type: 3}
+--- !u!1 &1249412272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1249412273}
+  - component: {fileID: 1249412275}
+  - component: {fileID: 1249412274}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1249412273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249412272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1701376568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1249412274
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249412272}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1249412275
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249412272}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1249875999
 GameObject:
   m_ObjectHideFlags: 0
@@ -34312,6 +37264,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914054693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333955622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333955623}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333955623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333955622}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 140594555}
+  - {fileID: 1101367891}
+  - {fileID: 258658305}
+  m_Father: {fileID: 822123542}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342034068
 GameObject:
   m_ObjectHideFlags: 0
@@ -34646,6 +37632,7 @@ GameObject:
   - component: {fileID: 1355263793}
   - component: {fileID: 1355263792}
   - component: {fileID: 1355263791}
+  - component: {fileID: 1355263798}
   m_Layer: 7
   m_Name: AI Car (lilac 3)
   m_TagString: Untagged
@@ -34807,6 +37794,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.573765, y: 2.6825893, z: 4.5422935}
   m_Center: {x: 0, y: 1.5405315, z: 8.902452}
+--- !u!114 &1355263798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355263789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: d1ce343bef7c9ed46b70e9cf10ecfc7b, type: 2}
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &1356213850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35436,6 +38463,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1914054693}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1375474381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375474382}
+  - component: {fileID: 1375474384}
+  - component: {fileID: 1375474383}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375474382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375474381}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 678045727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1375474383
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375474381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1375474384
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375474381}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1376560185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35825,6 +38942,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3613509038339085887, guid: e5e7ee9e267ceab4c82af64dcce4e420, type: 3}
       insertIndex: -1
       addedObject: {fileID: 54795341}
+    - targetCorrespondingSourceObject: {fileID: 3613509038339085887, guid: e5e7ee9e267ceab4c82af64dcce4e420, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 54795343}
   m_SourcePrefab: {fileID: 100100000, guid: e5e7ee9e267ceab4c82af64dcce4e420, type: 3}
 --- !u!1 &1387527956
 GameObject:
@@ -36286,6 +39406,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1414439698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414439691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &1417265602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36408,6 +39568,7 @@ GameObject:
   - component: {fileID: 1419008465}
   - component: {fileID: 1419008464}
   - component: {fileID: 1419008463}
+  - component: {fileID: 1419008470}
   m_Layer: 7
   m_Name: AI Car (blue_light 2)
   m_TagString: Untagged
@@ -36569,6 +39730,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.575276, y: 2.6825895, z: 4.3392477}
   m_Center: {x: 0, y: 1.5405315, z: -0.1250093}
+--- !u!114 &1419008470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419008461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: d1ce343bef7c9ed46b70e9cf10ecfc7b, type: 2}
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &1419842862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36989,6 +40190,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1428889270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428889263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &1443687092
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38901,6 +42142,96 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.4, y: 3, z: 1.5}
   m_Center: {x: 0, y: 1.5, z: 0.75}
+--- !u!1 &1519665615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1519665616}
+  - component: {fileID: 1519665618}
+  - component: {fileID: 1519665617}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1519665616
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519665615}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2062969549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1519665617
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519665615}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1519665618
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519665615}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1520096476
 GameObject:
   m_ObjectHideFlags: 0
@@ -39422,6 +42753,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1541584968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541584961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1545666825
 GameObject:
   m_ObjectHideFlags: 0
@@ -39616,6 +42987,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4065334524731742, guid: 0f423507880a570418de6a595999407c, type: 3}
   m_PrefabInstance: {fileID: 1553275340}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1553640305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553640306}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1553640306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553640305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2104487653}
+  - {fileID: 587987130}
+  - {fileID: 974252620}
+  m_Father: {fileID: 1770374197}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1556494143
 GameObject:
   m_ObjectHideFlags: 0
@@ -40065,6 +43470,163 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6.4, y: 3, z: 1.5}
   m_Center: {x: 0, y: 1.5, z: 0.75}
+--- !u!1001 &1569874549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1777094940}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000026822084
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Northbound (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1701376568}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1569874554}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1569874553}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1569874552}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &1569874550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 1569874549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1569874551 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 1569874549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1569874552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569874551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &1569874553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569874551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 1569874554}
+  redLamp: {fileID: 738286963}
+  yellowLamp: {fileID: 840580619}
+  greenLamp: {fileID: 1249412274}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &1569874554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569874551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 2
+  startOffset: 0
+  currentAction: 
 --- !u!1 &1572659053
 GameObject:
   m_ObjectHideFlags: 0
@@ -40932,6 +44494,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1607662689}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1607662693}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &1607662686 stripped
 GameObject:
@@ -40960,6 +44525,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 0
   startOffset: 1
+  currentAction: 
 --- !u!114 &1607662689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40980,6 +44546,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &1607662693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607662686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1609615619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
@@ -41057,6 +44663,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1609615626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609615619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1612715159
 GameObject:
   m_ObjectHideFlags: 0
@@ -42215,6 +45861,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5487906241404222195, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
   m_PrefabInstance: {fileID: 686530035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1651956949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651956942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1658738686
 GameObject:
   m_ObjectHideFlags: 0
@@ -42814,6 +46500,7 @@ GameObject:
   - component: {fileID: 1673961726}
   - component: {fileID: 1673961725}
   - component: {fileID: 1673961724}
+  - component: {fileID: 1673961731}
   m_Layer: 7
   m_Name: AI Car (yellow)
   m_TagString: Untagged
@@ -42975,6 +46662,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.5737405, y: 2.611735, z: 4.3404737}
   m_Center: {x: 0, y: 1.501168, z: -0.124877214}
+--- !u!114 &1673961731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673961722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: d1ce343bef7c9ed46b70e9cf10ecfc7b, type: 2}
+  mBehaviorSource:
+    behaviorName: AI Car
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1675697629
 GameObject:
   m_ObjectHideFlags: 0
@@ -43227,6 +46954,10 @@ PrefabInstance:
     - target: {fileID: 2383803647311905128, guid: a58cbc4c756fe0741b97e3a69b0905ad, type: 3}
       propertyPath: m_Name
       value: Driver Portrait
+      objectReference: {fileID: 0}
+    - target: {fileID: 2383803647311905128, guid: a58cbc4c756fe0741b97e3a69b0905ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3820858919809534719, guid: a58cbc4c756fe0741b97e3a69b0905ad, type: 3}
       propertyPath: m_Sprite
@@ -43790,6 +47521,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1094772589872227219, guid: 4d28e5034762a374ca8597ef1b4336f0, type: 3}
   m_PrefabInstance: {fileID: 1701029986}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1701376567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701376568}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701376568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701376567}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 738286962}
+  - {fileID: 840580618}
+  - {fileID: 1249412273}
+  m_Father: {fileID: 1569874550}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1706103264
 GameObject:
   m_ObjectHideFlags: 0
@@ -43995,6 +47760,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1709103758}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1709103762}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &1709103755 stripped
 GameObject:
@@ -44023,6 +47791,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 0
   startOffset: 1
+  currentAction: 
 --- !u!114 &1709103758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44043,6 +47812,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &1709103762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709103755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1712181824
 GameObject:
   m_ObjectHideFlags: 0
@@ -44724,6 +48533,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1751006928}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1751006932}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &1751006925 stripped
 GameObject:
@@ -44752,6 +48564,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 2
   startOffset: 0
+  currentAction: 
 --- !u!114 &1751006928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44772,6 +48585,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &1751006932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751006925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1751024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -45139,6 +48992,163 @@ MonoBehaviour:
   next:
   - {fileID: 1304067510}
   speedLimit: 4.5
+--- !u!1001 &1770374196
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1777094940}
+    m_Modifications:
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.00014710423
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -180.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      propertyPath: m_Name
+      value: Traffic Light I0 Eastbound (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1553640306}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1770374201}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1770374200}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1770374199}
+  m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+--- !u!4 &1770374197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 54993806401858243, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 1770374196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1770374198 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+  m_PrefabInstance: {fileID: 1770374196}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1770374199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770374198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
+--- !u!114 &1770374200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770374198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb031d0f0c00cc54e9eb5340f23113ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLightView
+  trafficLight: {fileID: 1770374201}
+  redLamp: {fileID: 2104487654}
+  yellowLamp: {fileID: 587987131}
+  greenLamp: {fileID: 974252621}
+  red: {r: 1, g: 0.12, b: 0.08, a: 1}
+  yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
+  green: {r: 0.15, g: 1, b: 0.35, a: 1}
+  offBrightness: 0.15
+--- !u!114 &1770374201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770374198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b99fb23aa57d6e742b91d3db775ba4e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LittleDriver.Traffic.TrafficLight
+  greenSeconds: 8
+  yellowSeconds: 2
+  redSeconds: 12
+  startState: 0
+  startOffset: 1
+  currentAction: 
 --- !u!1 &1771046212
 GameObject:
   m_ObjectHideFlags: 0
@@ -45191,6 +49201,41 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5544948077716497525, guid: b756a22c3e732fe4083d62a780341485, type: 3}
   m_PrefabInstance: {fileID: 154002162}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1777094939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1777094940}
+  m_Layer: 0
+  m_Name: 'Crossing Lights '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1777094940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777094939}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
+  m_LocalScale: {x: 3.993133, y: 3.993132, z: 3.993133}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1770374197}
+  - {fileID: 337355471}
+  - {fileID: 1569874550}
+  - {fileID: 730443797}
+  m_Father: {fileID: 2049371043}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1779170436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45276,6 +49321,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2077471299}
+    - targetCorrespondingSourceObject: {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2077471301}
   m_SourcePrefab: {fileID: 100100000, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
 --- !u!1001 &1781230797
 PrefabInstance:
@@ -45525,6 +49573,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1786521518}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1786521522}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &1786521515 stripped
 GameObject:
@@ -45553,6 +49604,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 2
   startOffset: 0
+  currentAction: 
 --- !u!114 &1786521518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45573,6 +49625,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &1786521522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786521515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1787185037
 GameObject:
   m_ObjectHideFlags: 0
@@ -45898,6 +49990,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 456522166}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1799075630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799075631}
+  - component: {fileID: 1799075633}
+  - component: {fileID: 1799075632}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1799075631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799075630}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 212188727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1799075632
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799075630}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1799075633
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799075630}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1801961569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46979,6 +51161,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1609615624}
+    - targetCorrespondingSourceObject: {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1609615626}
   m_SourcePrefab: {fileID: 100100000, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
 --- !u!1 &1854334202
 GameObject:
@@ -47512,6 +51697,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1866799719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866799712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1870513479
 GameObject:
   m_ObjectHideFlags: 0
@@ -48425,6 +52650,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 51f0e34e3bf5a364fb1f0489c6056013, type: 3}
   m_PrefabInstance: {fileID: 1909671842}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1913275209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913275210}
+  - component: {fileID: 1913275212}
+  - component: {fileID: 1913275211}
+  m_Layer: 0
+  m_Name: Green Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913275210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913275209}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.07, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 678045727}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1913275211
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913275209}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1913275212
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913275209}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1914054692
 GameObject:
   m_ObjectHideFlags: 0
@@ -48628,6 +52943,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &1914929163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914929156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &1915405383
 GameObject:
   m_ObjectHideFlags: 0
@@ -50017,6 +54372,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6128125313740500714, guid: 8e2407cfbae80e044bae21b813043ac3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1914929161}
+    - targetCorrespondingSourceObject: {fileID: 6128125313740500714, guid: 8e2407cfbae80e044bae21b813043ac3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1914929163}
   m_SourcePrefab: {fileID: 100100000, guid: 8e2407cfbae80e044bae21b813043ac3, type: 3}
 --- !u!1 &1989394654
 GameObject:
@@ -50980,6 +55338,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &2008650680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008650673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &2010133249
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51421,6 +55819,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2030646365}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2030646369}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &2030646362 stripped
 GameObject:
@@ -51449,6 +55850,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 0
   startOffset: 1
+  currentAction: 
 --- !u!114 &2030646365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51469,6 +55871,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &2030646369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030646362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1001 &2033437174
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51786,6 +56228,96 @@ MonoBehaviour:
   next:
   - {fileID: 1642323444}
   speedLimit: 4.5
+--- !u!1 &2040780810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040780811}
+  - component: {fileID: 2040780813}
+  - component: {fileID: 2040780812}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040780811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040780810}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 572229797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2040780812
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040780810}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2040780813
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040780810}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2041786499
 GameObject:
   m_ObjectHideFlags: 0
@@ -52008,7 +56540,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f287c8ed6096eb44aa5f3511fd5f3fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1777094940}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0f287c8ed6096eb44aa5f3511fd5f3fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 148518482}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f287c8ed6096eb44aa5f3511fd5f3fc, type: 3}
 --- !u!4 &2049371043 stripped
@@ -52295,6 +56833,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7873621286350765, guid: 67940ab91e14440409bfe800dcb3ed43, type: 3}
       insertIndex: -1
       addedObject: {fileID: 18796124}
+    - targetCorrespondingSourceObject: {fileID: 7873621286350765, guid: 67940ab91e14440409bfe800dcb3ed43, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 18796126}
   m_SourcePrefab: {fileID: 100100000, guid: 67940ab91e14440409bfe800dcb3ed43, type: 3}
 --- !u!1 &2060302988
 GameObject:
@@ -52395,6 +56936,40 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914054693}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2062969548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062969549}
+  m_Layer: 0
+  m_Name: Signal Lamps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062969549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062969548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 600291420}
+  - {fileID: 1519665616}
+  - {fileID: 964769790}
+  m_Father: {fileID: 730443797}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068471194
 GameObject:
@@ -52591,6 +57166,96 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6117585492900035265, guid: f405d8c1eae74b0428763cf6231820cf, type: 3}
   m_PrefabInstance: {fileID: 1556684051}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2074820760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074820761}
+  - component: {fileID: 2074820763}
+  - component: {fileID: 2074820762}
+  m_Layer: 0
+  m_Name: Yellow Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2074820761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074820760}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 3.69, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 572229797}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2074820762
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074820760}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2074820763
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074820760}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2077471294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
@@ -52668,6 +57333,46 @@ MonoBehaviour:
   crossingAttraction: 0.35
   turnSpeed: 360
   currentAction: 
+--- !u!114 &2077471301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077471294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 56c0f0664c2a350438f55eb8cf166e39, type: 2}
+  mBehaviorSource:
+    behaviorName: Pedestrian
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &2079182862
 GameObject:
   m_ObjectHideFlags: 0
@@ -52959,6 +57664,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2096050343}
+    - targetCorrespondingSourceObject: {fileID: 201995356586555067, guid: c8a786f03b34fba42b749f633b164906, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2096050347}
   m_SourcePrefab: {fileID: 100100000, guid: c8a786f03b34fba42b749f633b164906, type: 3}
 --- !u!1 &2096050340 stripped
 GameObject:
@@ -52987,6 +57695,7 @@ MonoBehaviour:
   redSeconds: 12
   startState: 2
   startOffset: 0
+  currentAction: 
 --- !u!114 &2096050343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53007,6 +57716,46 @@ MonoBehaviour:
   yellow: {r: 1, g: 0.78, b: 0.05, a: 1}
   green: {r: 0.15, g: 1, b: 0.35, a: 1}
   offBrightness: 0.15
+--- !u!114 &2096050347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096050340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7b55c7ecdb49a4a89fa5e6f9022861, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BehaviorDesigner.Runtime.BehaviorTree
+  startWhenEnabled: 1
+  asynchronousLoad: 0
+  pauseWhenDisabled: 0
+  restartWhenComplete: 0
+  logTaskChanges: 0
+  group: 0
+  resetValuesOnRestart: 0
+  externalBehavior: {fileID: 11400000, guid: 72c9dac3c76f478499506df93cd847ae, type: 2}
+  mBehaviorSource:
+    behaviorName: Traffic Light FSM
+    behaviorDescription: 
+    mTaskData:
+      types: []
+      parentIndex: 
+      startIndex: 
+      variableStartIndex: 
+      JSONSerialization: 
+      fieldSerializationData:
+        typeName: []
+        fieldNameHash: 
+        startIndex: 
+        dataPosition: 
+        unityObjects: []
+        byteData: 
+        byteDataArray: 
+      Version: 
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!1 &2097057010
 GameObject:
   m_ObjectHideFlags: 0
@@ -53161,6 +57910,96 @@ MonoBehaviour:
   next:
   - {fileID: 1108037097}
   speedLimit: 4.5
+--- !u!1 &2104487652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2104487653}
+  - component: {fileID: 2104487655}
+  - component: {fileID: 2104487654}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2104487653
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104487652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1553640306}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2104487654
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104487652}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2104487655
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104487652}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2104708723
 GameObject:
   m_ObjectHideFlags: 0
@@ -54010,6 +58849,96 @@ Transform:
   m_Children: []
   m_Father: {fileID: 317753743}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2143521477
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143521478}
+  - component: {fileID: 2143521480}
+  - component: {fileID: 2143521479}
+  m_Layer: 0
+  m_Name: Red Lamp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143521478
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143521477}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -0.45, y: 4.31, z: 0.13}
+  m_LocalScale: {x: 0.44, y: 0.02, z: 0.44}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 23294770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &2143521479
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143521477}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: bd5524a7e74e8fb4da5a6a779fa4bb24, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2143521480
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143521477}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &2144285629
 PrefabInstance:
   m_ObjectHideFlags: 0

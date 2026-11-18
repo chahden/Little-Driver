@@ -1,16 +1,17 @@
 using System.Collections.Generic;
-using LittleDriver.AI.BehaviorTrees;
+using LittleDriver.AI.Tasks;
 using LittleDriver.Traffic;
 using UnityEngine;
 
 namespace LittleDriver.AI.Pedestrians
 {
     /// <summary>
-    /// Walks the sidewalk network and sometimes crosses at a zebra crossing. Behavior Tree:
+    /// Body of a pedestrian. Its decisions are taken by the Behavior Designer tree "Pedestrian":
     /// finish crossing once on the road; wait at the kerb while a car is too close; step out; otherwise walk.
+    /// This component walks the sidewalk network and offers the conditions and actions the tree's tasks call.
     /// </summary>
     [RequireComponent(typeof(Animator))]
-    public sealed class Pedestrian : MonoBehaviour
+    public sealed class Pedestrian : MonoBehaviour, INpcBody
     {
         private static readonly int WalkHash = Animator.StringToHash("Walk 1");
 
@@ -20,33 +21,22 @@ namespace LittleDriver.AI.Pedestrians
         [Tooltip("Chance, at each sidewalk node, to take the way that leads toward the nearest zebra crossing.")]
         [SerializeField, Range(0f, 1f)] private float crossingAttraction = 0.35f;
         [SerializeField, Min(30f)] private float turnSpeed = 360f;
-        [Tooltip("Read-only: the action the tree is running.")]
+        [Tooltip("Read-only: the action the behaviour tree is running.")]
         [SerializeField] private string currentAction;
 
         private readonly Queue<Vector3> route = new Queue<Vector3>();
         private Animator animator;
-        private BehaviorTree tree;
         private SidewalkNode previous;
         private SidewalkNode target;
         private Crosswalk waitingAt;
         private Crosswalk crossing;
 
+        string INpcBody.CurrentAction { set => currentAction = value; }
+
         private void Awake()
         {
             animator = GetComponent<Animator>();
             animator.applyRootMotion = false; // the clips walk in place; the pedestrian is moved along the route
-            tree = new BehaviorTree(new Selector("Pedestrian",
-                new Sequence("Finish crossing",
-                    new ConditionNode("On the road?", () => crossing != null),
-                    Act("Cross the street", Walk)),
-                new Sequence("Wait at the kerb",
-                    new ConditionNode("Wants to cross?", () => waitingAt != null),
-                    new ConditionNode("Car too close?", () => !waitingAt.IsClearToCross()),
-                    Act("Wait for cars", Wait)),
-                new Sequence("Step onto the crossing",
-                    new ConditionNode("Wants to cross?", () => waitingAt != null),
-                    Act("Step out", StepOut)),
-                Act("Walk on the sidewalk", Walk)));
         }
 
         /// <summary>Starts walking from <paramref name="from"/> toward <paramref name="to"/>.</summary>
@@ -58,48 +48,46 @@ namespace LittleDriver.AI.Pedestrians
             route.Enqueue(to.Position);
         }
 
-        private void Update()
-        {
-            if (target != null) tree.Tick();
-        }
-
         private void OnDisable()
         {
             if (crossing != null) crossing.Leave(this);
             crossing = null;
         }
 
-        private ActionNode Act(string name, System.Func<NodeStatus> action) =>
-            new ActionNode(name, () => { currentAction = name; return action(); });
+        // Conditions (asked by the tree)
 
-        private NodeStatus Walk()
+        public bool HasRoute => target != null;
+        public bool IsOnRoad => crossing != null;
+        public bool WantsToCross => waitingAt != null;
+        public bool CarTooClose => waitingAt != null && !waitingAt.IsClearToCross();
+
+        // Actions (one frame each, run by the tree)
+
+        public void Walk()
         {
-            if (route.Count == 0) return NodeStatus.Running;
+            if (route.Count == 0) return;
             SetWalking(true);
             Vector3 goal = route.Peek();
             TurnTowards(goal);
             transform.position = Vector3.MoveTowards(transform.position, goal, walkSpeed * Time.deltaTime);
-            if ((transform.position - goal).sqrMagnitude > 0.0001f) return NodeStatus.Running;
+            if ((transform.position - goal).sqrMagnitude > 0.0001f) return;
             route.Dequeue();
             if (route.Count == 0) Arrive();
-            return NodeStatus.Running;
         }
 
-        private NodeStatus Wait()
+        public void Wait()
         {
             SetWalking(false);
             TurnTowards(target.Position);
-            return NodeStatus.Running;
         }
 
-        private NodeStatus StepOut()
+        public void StepOut()
         {
             crossing = waitingAt;
             waitingAt = null;
             crossing.Enter(this);
             foreach (Vector3 point in crossing.Route(previous.IsSideA)) route.Enqueue(point);
             route.Enqueue(target.Position);
-            return NodeStatus.Running;
         }
 
         private void Arrive()
